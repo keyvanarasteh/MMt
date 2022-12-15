@@ -1,2 +1,2 @@
--> Bu bölüm Sayın Keyvan Arasteh hocamızın istekleri için ayrılmıştır.
-- This section is reserved for the wishes of Mr. Keyvan Arasteh.
+-> Bu bölüm öğretmenimiz Sayın Keyvan Arasteh in istekleri için ayrılmıştır. Öğretmenimize gösterilecek projeler ve ödevler burada öncelikli olarak paylaşılır.
+- This section is reserved for the wishes of our teacher "Mr. Keyvan Arasteh". Projects and assignments to be shown to our teacher are shared here with priority.
