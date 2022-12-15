@@ -1,2 +1,2 @@
-    -> Bu bölümde mobil programlama dart&flutter kullanılarak projeler ve proje testleri yapılır. 
-    - In this section, projects and project tests are done using mobile programming dart&flutter.
+    -> "README.md dosyasını okuyunuz.."
+    - Read the README.md file.
