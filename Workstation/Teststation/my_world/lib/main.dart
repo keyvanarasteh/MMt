@@ -1,7 +1,7 @@
 // ignore_for_file: prefer_const_constructors
 
 import 'package:flutter/material.dart';
-import 'package:test00/screens/home_screen.dart';
+import 'package:test00/screens/hometest_scren.dart';
 
 void main() {
   runApp(const MyApp());
@@ -20,7 +20,7 @@ class MyApp extends StatelessWidget {
         primarySwatch: Colors.blue,
         fontFamily: 'Merienda',
       ),
-      home: HomeScreen(),
+      home: HomeTest(),
     );
   }
 }
