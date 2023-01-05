@@ -1,7 +1,7 @@
 // ignore_for_file: prefer_const_constructors
 
 import 'package:flutter/material.dart';
-import 'package:test00/screens/hometest_scren.dart';
+import 'package:test00/screens/home_screen.dart';
 
 void main() {
   runApp(const MyApp());
@@ -17,10 +17,11 @@ class MyApp extends StatelessWidget {
       title: 'Flutter Demo',
       debugShowCheckedModeBanner: false,
       theme: ThemeData(
-        primarySwatch: Colors.blue,
-        fontFamily: 'Merienda',
+        brightness: Brightness.dark,
+        primarySwatch: Colors.orange,
+        fontFamily: 'Ubuntu Font',
       ),
-      home: HomeTest(),
+      home: HomeScreen(),
     );
   }
 }
