@@ -12,6 +12,7 @@ class HomeScreen extends StatefulWidget {
 }
 
 class _HomeScreenState extends State<HomeScreen> {
+  int sayfa = 0;
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -83,37 +84,53 @@ class _HomeScreenState extends State<HomeScreen> {
             color: Colors.transparent,
             width: double.infinity,
             height: 60,
+            child: Expanded(
+              child: ListView(
+                scrollDirection: Axis.horizontal,
+                children: [
+                  CategoryItem(
+                    catogoryTitle: "Alışveriş Mağazalarım",
+                    isSelected: true,
+                  ),
+                  CategoryItem(
+                    catogoryTitle: "Günlük Rutinlerim",
+                    isSelected: false,
+                  ),
+                  CategoryItem(
+                    catogoryTitle: "Takvim Planlamam",
+                    isSelected: false,
+                  ),
+                  CategoryItem(
+                    catogoryTitle: "Mesleki Ajandam",
+                    isSelected: false,
+                  ),
+                  CategoryItem(
+                    catogoryTitle: "Not Defterim",
+                    isSelected: false,
+                  ),
+                  CategoryItem(
+                    catogoryTitle: "Sosyal Medyam",
+                    isSelected: false,
+                  ),
+                ],
+              ),
+            ),
+          ),
+
+          //Ürünler
+          Expanded(
             child: ListView(
               scrollDirection: Axis.horizontal,
               children: [
-                CategoryItem(
-                  catogoryTitle: "Alışveriş Mağazalarım",
-                  isSelected: true,
-                ),
-                CategoryItem(
-                  catogoryTitle: "Günlük Rutinlerim",
-                  isSelected: false,
-                ),
-                CategoryItem(
-                  catogoryTitle: "Takvim Planlamam",
-                  isSelected: false,
-                ),
-                CategoryItem(
-                  catogoryTitle: "Mesleki Ajandam",
-                  isSelected: false,
-                ),
-                CategoryItem(
-                  catogoryTitle: "Not Defterim",
-                  isSelected: false,
-                ),
-                CategoryItem(
-                  catogoryTitle: "Sosyal Medyam",
-                  isSelected: false,
-                ),
+                Container(
+                  width: 200,
+                  decoration: BoxDecoration(
+                    color: Colors.orange,
+                  ),
+                )
               ],
             ),
-          )
-          //Product
+          ),
         ],
       ),
 
@@ -121,6 +138,11 @@ class _HomeScreenState extends State<HomeScreen> {
       bottomNavigationBar: BottomNavigationBar(
           unselectedItemColor: Colors.orange,
           selectedItemColor: Colors.green,
+          currentIndex: sayfa,
+          onTap: (value) {
+            sayfa = value;
+            setState(() {});
+          },
           items: [
             BottomNavigationBarItem(
               icon: Icon(Icons.phone),
