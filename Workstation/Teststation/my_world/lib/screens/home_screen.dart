@@ -2,6 +2,8 @@
 
 import 'package:flutter/material.dart';
 
+import '../widgets/category_item.dart';
+
 class HomeScreen extends StatefulWidget {
   const HomeScreen({super.key});
 
@@ -50,6 +52,7 @@ class _HomeScreenState extends State<HomeScreen> {
           SizedBox(
             height: 25,
           ),
+
           //Arama Alanı
           Padding(
             padding: const EdgeInsets.symmetric(horizontal: 20.0),
@@ -58,41 +61,80 @@ class _HomeScreenState extends State<HomeScreen> {
                 prefixIcon: Icon(
                   Icons.question_answer,
                 ),
+                iconColor: Colors.orange,
                 hintText: "Bugün benden neler istiyorsun bakalım?",
                 focusedBorder: OutlineInputBorder(
                   borderSide: BorderSide(
-                    color: Colors.orange,
+                    color: Colors.green.shade700,
                   ),
                 ),
                 enabledBorder: OutlineInputBorder(
                   borderSide: BorderSide(
-                    color: Colors.grey.shade800,
+                    color: Colors.orange,
                   ),
                 ),
               ),
             ),
           ),
 
-          //Catogories
-
+          //Katagoriler
+          Container(
+            padding: EdgeInsets.all(12),
+            color: Colors.transparent,
+            width: double.infinity,
+            height: 60,
+            child: ListView(
+              scrollDirection: Axis.horizontal,
+              children: [
+                CategoryItem(
+                  catogoryTitle: "Alışveriş Mağazalarım",
+                  isSelected: true,
+                ),
+                CategoryItem(
+                  catogoryTitle: "Günlük Rutinlerim",
+                  isSelected: false,
+                ),
+                CategoryItem(
+                  catogoryTitle: "Takvim Planlamam",
+                  isSelected: false,
+                ),
+                CategoryItem(
+                  catogoryTitle: "Mesleki Ajandam",
+                  isSelected: false,
+                ),
+                CategoryItem(
+                  catogoryTitle: "Not Defterim",
+                  isSelected: false,
+                ),
+                CategoryItem(
+                  catogoryTitle: "Sosyal Medyam",
+                  isSelected: false,
+                ),
+              ],
+            ),
+          )
           //Product
         ],
       ),
+
       //Alt Bar Ekledim.
-      bottomNavigationBar: BottomNavigationBar(items: [
-        BottomNavigationBarItem(
-          icon: Icon(Icons.phone),
-          label: "Telefon",
-        ),
-        BottomNavigationBarItem(
-          icon: Icon(Icons.favorite),
-          label: "Favoriler",
-        ),
-        BottomNavigationBarItem(
-          icon: Icon(Icons.notifications),
-          label: "Ulak",
-        ),
-      ]),
+      bottomNavigationBar: BottomNavigationBar(
+          unselectedItemColor: Colors.orange,
+          selectedItemColor: Colors.green,
+          items: [
+            BottomNavigationBarItem(
+              icon: Icon(Icons.phone),
+              label: "Telefon",
+            ),
+            BottomNavigationBarItem(
+              icon: Icon(Icons.favorite),
+              label: "Favoriler",
+            ),
+            BottomNavigationBarItem(
+              icon: Icon(Icons.notifications),
+              label: "Ulak",
+            ),
+          ]),
     );
   }
 }
