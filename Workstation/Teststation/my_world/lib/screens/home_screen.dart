@@ -45,7 +45,7 @@ class _HomeScreenState extends State<HomeScreen> {
           Padding(
             padding: const EdgeInsets.all(20),
             child: Text(
-              "Hoşgeldin Patron",
+              "Hoşgeldin Patron !",
               style: TextStyle(
                 fontSize: 60,
                 fontWeight: FontWeight.bold,
