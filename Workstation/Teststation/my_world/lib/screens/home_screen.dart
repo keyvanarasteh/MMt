@@ -2,7 +2,8 @@
 
 import 'package:flutter/material.dart';
 
-import '../widgets/category_item.dart';
+import '../widgets/homescreenwidgets/category_item.dart';
+import '../widgets/homescreenwidgets/product_item.dart';
 
 class HomeScreen extends StatefulWidget {
   const HomeScreen({super.key});
@@ -17,7 +18,8 @@ class _HomeScreenState extends State<HomeScreen> {
   Widget build(BuildContext context) {
     return Scaffold(
       backgroundColor: Colors.grey.shade600,
-      // Bar tasarımı yapılıyor..
+
+// Bar tasarımı yapılıyor..
       appBar: AppBar(
         elevation: 30,
         backgroundColor: Colors.transparent,
@@ -35,7 +37,8 @@ class _HomeScreenState extends State<HomeScreen> {
           ),
         ],
       ),
-      //Body
+
+//Body Burada
       body: Column(
         children: [
           // Karşılama Metni
@@ -80,7 +83,12 @@ class _HomeScreenState extends State<HomeScreen> {
 
           //Katagoriler
           Container(
-            padding: EdgeInsets.all(12),
+            padding: EdgeInsets.only(
+              left: 12,
+              right: 12,
+              top: 12,
+              bottom: 0,
+            ),
             color: Colors.transparent,
             width: double.infinity,
             height: 60,
@@ -117,17 +125,18 @@ class _HomeScreenState extends State<HomeScreen> {
             ),
           ),
 
-          //Ürünler
+          //Kategori Ürünleri
           Expanded(
             child: ListView(
               scrollDirection: Axis.horizontal,
               children: [
-                Container(
-                  width: 200,
-                  decoration: BoxDecoration(
-                    color: Colors.orange,
-                  ),
-                )
+                ProductItem(),
+                ProductItem(),
+                ProductItem(),
+                ProductItem(),
+                ProductItem(),
+                ProductItem(),
+                ProductItem(),
               ],
             ),
           ),

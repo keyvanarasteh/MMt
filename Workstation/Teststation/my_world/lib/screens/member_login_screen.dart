@@ -90,10 +90,6 @@ class _MemberLoginScreenState extends State<MemberLoginScreen> {
                 ),
               ),
               InkWell(
-                onTap: () {
-                  HomeScreen();
-                  print("Tıklandı.");
-                },
                 child: Container(
                   margin: EdgeInsets.symmetric(horizontal: 90),
                   width: MediaQuery.of(context).size.width,
