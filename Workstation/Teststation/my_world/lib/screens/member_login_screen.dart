@@ -1,7 +1,6 @@
 // ignore_for_file: prefer_const_constructors, prefer_const_literals_to_create_immutables
 
 import 'package:flutter/material.dart';
-import 'package:test00/screens/home_screen.dart';
 
 class MemberLoginScreen extends StatefulWidget {
   const MemberLoginScreen({super.key});
@@ -17,10 +16,10 @@ class _MemberLoginScreenState extends State<MemberLoginScreen> {
   Widget build(BuildContext context) {
     return SafeArea(
       child: Scaffold(
-        body: Container(
+        backgroundColor: Colors.grey.shade600,
+        body: SizedBox(
           width: MediaQuery.of(context).size.width,
-          decoration:
-              const BoxDecoration(color: Color.fromARGB(255, 44, 46, 50)),
+          // decoration: const BoxDecoration(color: Colors.orange),
           child: Column(
             children: [
               Container(
@@ -33,11 +32,10 @@ class _MemberLoginScreenState extends State<MemberLoginScreen> {
                       color: const Color.fromARGB(255, 0, 0, 0),
                       width: 1,
                     )),
-                child: Container(
-                    child: Icon(
+                child: Icon(
                   Icons.fingerprint,
                   size: 100,
-                )),
+                ),
               ),
               Container(
                 margin: EdgeInsets.only(top: 15),

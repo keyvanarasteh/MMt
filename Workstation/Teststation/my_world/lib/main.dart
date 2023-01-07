@@ -18,7 +18,8 @@ class MyApp extends StatelessWidget {
       debugShowCheckedModeBanner: false,
       theme: ThemeData(
         brightness: Brightness.dark,
-        primarySwatch: Colors.orange,
+        primarySwatch: Colors.grey,
+        //backgroundColor: Colors.grey,
         fontFamily: 'Ubuntu Font',
       ),
       home: HomeScreen(),

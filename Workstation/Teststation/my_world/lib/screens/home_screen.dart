@@ -62,8 +62,13 @@ class _HomeScreenState extends State<HomeScreen> {
             padding: const EdgeInsets.symmetric(horizontal: 20.0),
             child: TextField(
               decoration: InputDecoration(
+                //metin ikonu soldaki
                 prefixIcon: Icon(
                   Icons.question_answer,
+                ),
+                //arama ikonu sağdaki
+                suffixIcon: Icon(
+                  Icons.search,
                 ),
                 iconColor: Colors.orange,
                 hintText: "Bugün benden neler istiyorsun bakalım?",
@@ -130,10 +135,6 @@ class _HomeScreenState extends State<HomeScreen> {
             child: ListView(
               scrollDirection: Axis.horizontal,
               children: [
-                ProductItem(),
-                ProductItem(),
-                ProductItem(),
-                ProductItem(),
                 ProductItem(),
                 ProductItem(),
                 ProductItem(),
