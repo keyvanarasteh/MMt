@@ -1,0 +1,72 @@
+name: test00
+description: A new Flutter project.
+publish_to: 'none' 
+version: 1.0.0+1
+
+environment:
+  sdk: '>=2.18.2 <3.0.0'
+
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+
+ 
+  cupertino_icons: ^1.0.2
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+
+
+  flutter_lints: ^2.0.0
+
+flutter:
+
+  uses-material-design: true
+
+  # To add assets to your application, add an assets section, like this:
+  assets:
+    - assets/images/home_screen_images/
+    - assets/icons/fonts/
+
+  # An image asset can refer to one or more resolution-specific "variants", see
+  # https://flutter.dev/assets-and-images/#resolution-aware
+
+  # For details regarding adding assets from package dependencies, see
+  # https://flutter.dev/assets-and-images/#from-packages
+
+  # To add custom fonts to your application, add a fonts section here,
+  # in this "flutter" section. Each entry in this list should have a
+  # "family" key with the font family name, and a "fonts" key with a
+  # list giving the asset and other descriptors for the font. For
+  # example:
+  fonts:
+    - family: Merienda
+      fonts:
+        - asset: assets/fonts/Merienda/Merienda-VariableFont_wght.ttf
+        - asset: assets/fonts/Merienda/static/Merienda-Black.ttf
+        - asset: assets/fonts/Merienda/static/Merienda-Bold.ttf
+        - asset: assets/fonts/Merienda/static/Merienda-ExtraBold.ttf
+        - asset: assets/fonts/Merienda/static/Merienda-Light.ttf
+        - asset: assets/fonts/Merienda/static/Merienda-Medium.ttf
+        - asset: assets/fonts/Merienda/static/Merienda-Regular.ttf
+        - asset: assets/fonts/Merienda/static/Merienda-SemiBold.ttf
+    - family: Ubuntu Font
+      fonts:
+        - asset: assets/fonts/Ubuntu Font/Ubuntu-Bold.ttf
+        - asset: assets/fonts/Ubuntu Font/Ubuntu-BoldItalic.ttf
+          weight: 700
+        - asset: assets/fonts/Ubuntu Font/Ubuntu-Italic.ttf
+        - asset: assets/fonts/Ubuntu Font/Ubuntu-Light.ttf
+        - asset: assets/fonts/Ubuntu Font/Ubuntu-LightItalic.ttf
+        - asset: assets/fonts/Ubuntu Font/Ubuntu-Medium.ttf
+        - asset: assets/fonts/Ubuntu Font/Ubuntu-MediumItalic.ttf
+        - asset: assets/fonts/Ubuntu Font/Ubuntu-Regular.ttf
+    - family: HeartLike
+      fonts:
+        - asset: assets/icons/fonts/HeartLike.ttf
+  #
+  # For details regarding fonts from package dependencies,
+  # see https://flutter.dev/custom-fonts/#from-packages
