@@ -3,7 +3,7 @@
 import 'package:flutter/material.dart';
 
 import '../widgets/homescreenwidgets/category_item.dart';
-import '../widgets/homescreenwidgets/product_item.dart';
+import '../widgets/homescreenwidgets/mall.dart';
 
 class HomeScreen extends StatefulWidget {
   const HomeScreen({super.key});
@@ -130,14 +130,59 @@ class _HomeScreenState extends State<HomeScreen> {
             ),
           ),
 
-          //Kategori Ürünleri
+          //Alışveriş Mağazaları
           Expanded(
             child: ListView(
               scrollDirection: Axis.horizontal,
               children: [
-                ProductItem(),
-                ProductItem(),
-                ProductItem(),
+                Mall(
+                  mallImage: "assets/images/home_screen_images/Arabam_icon.png",
+                  mallName: "Arabam.com",
+                  mallDescription: "Araç Alım Satım Sayfası",
+                  mallLikeRate: "80",
+                ),
+                Mall(
+                  mallImage:
+                      "assets/images/home_screen_images/Teknosa_icon.png",
+                  mallName: "Teknosa",
+                  mallDescription: "Türkiyenin Teknonoloji Mağazası",
+                  mallLikeRate: "89",
+                ),
+                Mall(
+                  mallImage:
+                      "assets/images/home_screen_images/YemekSepeti_icon.png",
+                  mallName: "Yemek Sepeti",
+                  mallDescription: "Online Yemek Alışveriş Mağazası",
+                  mallLikeRate: "87",
+                ),
+                Mall(
+                  mallImage:
+                      "assets/images/home_screen_images/Dominos_icon.png",
+                  mallName: "DOMİNOS",
+                  mallDescription: "Pizza Marketi",
+                  mallLikeRate: "98",
+                ),
+                Mall(
+                  mallImage:
+                      "assets/images/home_screen_images/Sahibinden_icon.png",
+                  mallName: "SAHİBİNDEN",
+                  mallDescription: "Araç Ve Gereç Mağazası",
+                  mallLikeRate: "95",
+                ),
+                Mall(
+                  mallImage:
+                      "assets/images/home_screen_images/Trendyol_icon.png",
+                  mallName: "TRENDYOL",
+                  mallDescription:
+                      "Trendyol, merkezi İstanbul'da bulunan bir e-ticaret pazaryeri.",
+                  mallLikeRate: "95",
+                ),
+                Mall(
+                  mallImage: "assets/images/home_screen_images/Amazon_icon.png",
+                  mallName: "AMAZON",
+                  mallDescription: "Uluslararası Mağaza",
+                  mallLikeRate: "95",
+                ),
               ],
             ),
           ),

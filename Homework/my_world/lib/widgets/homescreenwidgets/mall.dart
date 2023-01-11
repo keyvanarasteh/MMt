@@ -1,11 +1,20 @@
 // ignore_for_file: prefer_const_constructors, prefer_const_literals_to_create_immutables
 
 import 'package:flutter/material.dart';
-import 'package:test00/icons/heart_like_icons.dart';
+import '../../icons/heart_like_icons.dart';
 
-class ProductItem extends StatelessWidget {
-  const ProductItem({
+class Mall extends StatelessWidget {
+  final String mallImage;
+  final String mallName;
+  final String mallDescription;
+  final String mallLikeRate;
+
+  const Mall({
     Key? key,
+    required this.mallName,
+    required this.mallDescription,
+    required this.mallImage,
+    required this.mallLikeRate,
   }) : super(key: key);
 
   @override
@@ -44,8 +53,7 @@ class ProductItem extends StatelessWidget {
               //ClipRRect ile borderRadius kullanılarak resim kenarları yumuşatıldı.
               child: ClipRRect(
                 borderRadius: BorderRadius.circular(32),
-                child: Image.asset(
-                    'assets/images/home_screen_images/Arabam_icon.png'),
+                child: Image.asset(mallImage),
               ),
             ),
 
@@ -60,7 +68,7 @@ class ProductItem extends StatelessWidget {
                   ),
 
                   Text(
-                    "Arabam.com",
+                    mallName,
                     style: TextStyle(
                         color: Colors.white,
                         fontSize: 20,
@@ -73,7 +81,7 @@ class ProductItem extends StatelessWidget {
 
 //Market Açıklaması
                   Text(
-                    "Araç Alım Satım Sayfası",
+                    mallDescription,
                     style: TextStyle(
                         color: Color.fromARGB(140, 255, 153, 0),
                         fontSize: 15,
@@ -83,7 +91,7 @@ class ProductItem extends StatelessWidget {
                     height: 20,
                   ),
 
-//Market Değer Yüzdeliği
+//Market Beğeni Oranı
                   Padding(
                     padding: const EdgeInsets.symmetric(horizontal: 8.0),
                     child: Row(
@@ -94,7 +102,7 @@ class ProductItem extends StatelessWidget {
                           mainAxisAlignment: MainAxisAlignment.start,
                           children: [
                             Icon(HeartLike.heart, color: Colors.red),
-                            Text("%80"),
+                            Text("%$mallLikeRate"),
                           ],
                         ),
                         Container(
