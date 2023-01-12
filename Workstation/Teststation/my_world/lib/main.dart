@@ -1,9 +1,8 @@
 // ignore_for_file: prefer_const_constructors
 
 import 'package:flutter/material.dart';
-import 'package:test00/screens/beginScreens/home_screen.dart';
 
-import 'screens/chatScreens/chat_screen.dart';
+import 'screens/chatScreens/main_chat_screen.dart';
 
 void main() {
   runApp(const MyWorld());
@@ -24,7 +23,7 @@ class MyWorld extends StatelessWidget {
         //backgroundColor: Colors.grey,
         fontFamily: 'Ubuntu Font',
       ),
-      home: ChatScreen(),
+      home: MainChatScreen(),
     );
   }
 }

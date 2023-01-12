@@ -8,14 +8,14 @@ import 'chats_screen.dart';
 import 'common/appbar.dart';
 import 'conversations_screen.dart';
 
-class ChatScreen extends StatefulWidget {
-  const ChatScreen({super.key});
+class MainChatScreen extends StatefulWidget {
+  const MainChatScreen({super.key});
 
   @override
-  State<ChatScreen> createState() => _ChatScreenState();
+  State<MainChatScreen> createState() => _MainChatScreenState();
 }
 
-class _ChatScreenState extends State<ChatScreen> {
+class _MainChatScreenState extends State<MainChatScreen> {
   checkDevices(double width) {
 //Ekran bouylatlarına göre şartlama
     if (width <= 576) {
