@@ -1,3 +1,5 @@
+// ignore_for_file: prefer_const_constructors
+
 import 'package:flutter/material.dart';
 import 'package:test00/screens/home_screen.dart';
 
@@ -13,9 +15,12 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       title: 'Flutter Demo',
+      debugShowCheckedModeBanner: false,
       theme: ThemeData(
-        primarySwatch: Colors.blue,
-        fontFamily: 'Merienda',
+        brightness: Brightness.dark,
+        primarySwatch: Colors.grey,
+        //backgroundColor: Colors.grey,
+        fontFamily: 'Ubuntu Font',
       ),
       home: HomeScreen(),
     );
