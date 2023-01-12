@@ -1,0 +1,1 @@
+İşlevi sonlandırılan dosyalar .txt olarak saklanmaktadır.
