@@ -1,6 +1,8 @@
 // ignore_for_file: prefer_const_constructors
 
 import 'package:flutter/material.dart';
+import 'package:test00/screens/beginScreens/home_screen.dart';
+import 'package:test00/screens/beginScreens/member_login_screen.dart';
 
 import 'screens/chatScreens/main_chat_screen.dart';
 
@@ -23,7 +25,7 @@ class MyWorld extends StatelessWidget {
         //backgroundColor: Colors.grey,
         fontFamily: 'Ubuntu Font',
       ),
-      home: MainChatScreen(),
+      home: MemberLoginScreen(),
     );
   }
 }

@@ -4,6 +4,7 @@ import 'package:flutter/material.dart';
 
 import '../../widgets/homescreenwidgets/category_item.dart';
 import '../../widgets/homescreenwidgets/mall.dart';
+import '../chatScreens/main_chat_screen.dart';
 
 class HomeScreen extends StatefulWidget {
   const HomeScreen({super.key});
@@ -13,13 +14,9 @@ class HomeScreen extends StatefulWidget {
 }
 
 class _HomeScreenState extends State<HomeScreen> {
-  int sayfa = 0;
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: Colors.grey.shade600,
-
-// Bar tasarımı yapılıyor..
       appBar: AppBar(
         elevation: 30,
         backgroundColor: Colors.transparent,
@@ -37,8 +34,6 @@ class _HomeScreenState extends State<HomeScreen> {
           ),
         ],
       ),
-
-//Body Burada
       body: Column(
         children: [
           // Karşılama Metni
@@ -188,7 +183,36 @@ class _HomeScreenState extends State<HomeScreen> {
           ),
         ],
       ),
+    );
+  }
+}
 
+class HomeScreens extends StatefulWidget {
+  const HomeScreens({super.key});
+
+  @override
+  State<HomeScreens> createState() => _HomeScreensState();
+}
+
+class _HomeScreensState extends State<HomeScreens> {
+  int sayfa = 0;
+  static List<Widget> pageRouter = [
+    HomeScreen(),
+    HomeScreen(),
+    HomeScreen(),
+    MainChatScreen()
+  ];
+  @override
+  Widget build(BuildContext context) {
+    return Scaffold(
+      backgroundColor: Colors.grey.shade600,
+
+// Bar tasarımı yapılıyor..
+
+//Body Burada
+      body: Center(
+        child: pageRouter.elementAt(sayfa),
+      ),
       //Alt Bar Ekledim.
       bottomNavigationBar: BottomNavigationBar(
           unselectedItemColor: Colors.orange,

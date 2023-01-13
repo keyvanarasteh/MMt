@@ -1,6 +1,7 @@
 // ignore_for_file: prefer_const_constructors, prefer_const_literals_to_create_immutables
 
 import 'package:flutter/material.dart';
+import 'package:test00/screens/beginScreens/home_screen.dart';
 
 class MemberLoginScreen extends StatefulWidget {
   const MemberLoginScreen({super.key});
@@ -88,6 +89,13 @@ class _MemberLoginScreenState extends State<MemberLoginScreen> {
                 ),
               ),
               InkWell(
+                onTap: () {
+                  Navigator.push(
+                      context,
+                      MaterialPageRoute(
+                        builder: (context) => HomeScreens(),
+                      ));
+                },
                 child: Container(
                   margin: EdgeInsets.symmetric(horizontal: 90),
                   width: MediaQuery.of(context).size.width,
