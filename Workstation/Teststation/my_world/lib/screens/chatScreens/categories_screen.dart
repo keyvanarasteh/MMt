@@ -5,6 +5,9 @@ class CategoriesScreen extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Scaffold(body: Center(child: Text("CategoriesScreen")));
+    return Scaffold(
+        body: Center(
+            child:
+                Image.asset("assets/images/chats_screen_images/my_world.png")));
   }
 }

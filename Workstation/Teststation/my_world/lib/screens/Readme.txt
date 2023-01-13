@@ -1,1 +1,2 @@
-İşlevi sonlandırılan dosyalar .txt olarak saklanmaktadır.
+İşlevi sonlandırılan dosyalar _.txt olarak saklanmaktadır.
+chat_bubles kütüphanesi eklendi.

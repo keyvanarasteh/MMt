@@ -38,15 +38,15 @@ class _MainChatScreenState extends State<MainChatScreen> {
 
     Widget buildMainArea() {
       if (deviceTtpye == 'mobile') {
-        return ChatsScreen();
+        return ConversationsScreen();
       } else if (deviceTtpye == 'tablet') {
         return Row(
           children: [
             Expanded(
-              child: CategoriesScreen(),
+              child: ChatsScreen(),
             ),
             Expanded(
-              child: ChatsScreen(),
+              child: ConversationsScreen(),
             ),
           ],
         );

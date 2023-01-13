@@ -5,6 +5,9 @@ class ChatInfoScreen extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Scaffold(body: Center(child: Text("ChatInfoScreen")));
+    return Scaffold(
+        body: Center(
+            child:
+                Image.asset("assets/images/chats_screen_images/manzara.jpg")));
   }
 }
