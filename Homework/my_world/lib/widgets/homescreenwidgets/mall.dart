@@ -32,7 +32,7 @@ class Mall extends StatelessWidget {
                 Color.fromRGBO(48, 48, 48, 10),
                 Color.fromRGBO(253, 152, 0, 1),
               ],
-              //Kutu Renk Geçişi Yönü
+//Kutu Renk Geçişi Yönü
               begin: Alignment.topLeft,
               end: Alignment.bottomRight),
           //Kutu Yuvarlaklığı
@@ -43,17 +43,19 @@ class Mall extends StatelessWidget {
           children: [
 // Kutu Resmi Burada Yer Almaktadır.
             //Resim ile Kutu Arasındaki Boşluklar
-            Padding(
-              padding: const EdgeInsets.only(
-                left: 15,
-                right: 15,
-                top: 25,
-              ),
-//Kutuya Resim Ekleme
-              //ClipRRect ile borderRadius kullanılarak resim kenarları yumuşatıldı.
-              child: ClipRRect(
-                borderRadius: BorderRadius.circular(32),
-                child: Image.asset(mallImage),
+            Expanded(
+              child: Padding(
+                padding: const EdgeInsets.only(
+                  left: 15,
+                  right: 15,
+                  top: 25,
+                ),
+                //Kutuya Resim Ekleme
+                //ClipRRect ile borderRadius kullanılarak resim kenarları yumuşatıldı.
+                child: ClipRRect(
+                  borderRadius: BorderRadius.circular(32),
+                  child: Image.asset(mallImage),
+                ),
               ),
             ),
 

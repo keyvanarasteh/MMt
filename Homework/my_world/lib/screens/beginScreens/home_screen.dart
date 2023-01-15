@@ -228,8 +228,8 @@ class _HomeScreensState extends State<HomeScreens> {
               label: "Telefon",
             ),
             BottomNavigationBarItem(
-              icon: Icon(Icons.favorite),
-              label: "Favoriler",
+              icon: Icon(Icons.home),
+              label: "Anasayfa",
             ),
             BottomNavigationBarItem(
               icon: Icon(Icons.notifications),

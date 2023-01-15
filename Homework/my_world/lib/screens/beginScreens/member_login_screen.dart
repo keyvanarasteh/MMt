@@ -17,25 +17,27 @@ class _MemberLoginScreenState extends State<MemberLoginScreen> {
   Widget build(BuildContext context) {
     return SafeArea(
       child: Scaffold(
-        backgroundColor: Colors.grey.shade600,
+        // backgroundColor: Colors.grey.shade600,
         body: SizedBox(
           width: MediaQuery.of(context).size.width,
           // decoration: const BoxDecoration(color: Colors.orange),
           child: Column(
             children: [
-              Container(
-                margin: EdgeInsets.only(top: 60),
-                width: 100,
-                height: 100,
-                decoration: BoxDecoration(
-                    borderRadius: BorderRadius.circular(100),
-                    border: Border.all(
-                      color: const Color.fromARGB(255, 0, 0, 0),
-                      width: 1,
-                    )),
-                child: Icon(
-                  Icons.fingerprint,
-                  size: 100,
+              Expanded(
+                child: Container(
+                  margin: EdgeInsets.only(top: 60),
+                  width: 100,
+                  height: 100,
+                  decoration: BoxDecoration(
+                      borderRadius: BorderRadius.circular(100),
+                      border: Border.all(
+                        color: const Color.fromARGB(255, 0, 0, 0),
+                        width: 1,
+                      )),
+                  child: Icon(
+                    Icons.fingerprint,
+                    size: 100,
+                  ),
                 ),
               ),
               Container(
@@ -43,7 +45,7 @@ class _MemberLoginScreenState extends State<MemberLoginScreen> {
               ),
               Container(
                 decoration: BoxDecoration(
-                  color: Color.fromARGB(255, 33, 67, 92),
+                  color: Colors.orange.shade800,
                   borderRadius: BorderRadius.circular(20),
                 ),
                 margin: EdgeInsets.only(
@@ -59,12 +61,12 @@ class _MemberLoginScreenState extends State<MemberLoginScreen> {
                       border: InputBorder.none,
                       prefixIcon: Icon(Icons.account_circle),
                       hintText: "E-mail giriniz:"),
-                  style: TextStyle(fontFamily: 'Merienda', color: Colors.white),
+                  style: TextStyle(color: Colors.white),
                 ),
               ),
               Container(
                 decoration: BoxDecoration(
-                  color: Color.fromARGB(255, 33, 67, 92),
+                  color: Colors.orange.shade800,
                   borderRadius: BorderRadius.circular(20),
                 ),
                 margin: EdgeInsets.only(
@@ -83,7 +85,6 @@ class _MemberLoginScreenState extends State<MemberLoginScreen> {
                     hintText: "Şifre giriniz:",
                   ),
                   style: TextStyle(
-                    fontFamily: 'Merienda',
                     color: Colors.white,
                   ),
                 ),
@@ -101,17 +102,30 @@ class _MemberLoginScreenState extends State<MemberLoginScreen> {
                   width: MediaQuery.of(context).size.width,
                   padding: EdgeInsets.all(15),
                   decoration: BoxDecoration(
-                      gradient: LinearGradient(
-                          colors: [Colors.white30, Colors.black54]),
+                      gradient: LinearGradient(colors: [
+                        Colors.grey.shade800,
+                        Colors.orange.shade700
+                      ]),
                       borderRadius: BorderRadius.circular(40)),
                   child: Center(
                       child: Text(
                     "GİRİŞ YAP",
-                    style: TextStyle(
-                        fontFamily: 'Merienda',
-                        color: Colors.white,
-                        fontSize: 25),
+                    style: TextStyle(color: Colors.white, fontSize: 25),
                   )),
+                ),
+              ),
+              Expanded(
+                flex: 1,
+                child: Container(
+                  padding: const EdgeInsets.all(20),
+                  child: Text(
+                    "Seni tanıyabilmem için bilgilerini bana girebilir misin ? !",
+                    style: TextStyle(
+                      fontSize: 35,
+                      fontWeight: FontWeight.bold,
+                      //fontFamily: "Merienda"
+                    ),
+                  ),
                 ),
               ),
             ],

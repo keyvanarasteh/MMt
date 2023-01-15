@@ -2,8 +2,8 @@
 
 import 'package:flutter/material.dart';
 
-class ChatsScreen extends StatelessWidget {
-  const ChatsScreen({super.key});
+class CategoriesScreen extends StatelessWidget {
+  const CategoriesScreen({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -16,42 +16,43 @@ class ChatsScreen extends StatelessWidget {
         ),
       ),
       child: ListView(children: [
-        ChatItem(
-            name: 'Muratcan SEN',
-            avatar: "assets/images/chats_screen_images/avatarMuratcan.jpg",
-            time: "11.50"),
-        ChatItem(
-            name: 'Keyvan ARASTEH',
-            avatar: "assets/images/chats_screen_images/avatarKeyvan.jpg",
-            time: "11.40"),
-        ChatItem(
-            name: 'Arda BULU',
-            avatar: "assets/images/chats_screen_images/avatarArda.jpg",
-            time: "11.30"),
-        ChatItem(
-            name: 'Mert',
-            avatar: "assets/images/chats_screen_images/avatarMert.jpg",
-            time: "11.20"),
+        PostCategoriItem(
+          icon: Icon(Icons.inbox_outlined),
+          name: 'Gelen Kutusu',
+          time: "",
+          active: true,
+        ),
+        PostCategoriItem(
+            icon: Icon(Icons.outbox_outlined),
+            name: 'Giden Mesajlar',
+            time: ""),
+        PostCategoriItem(
+            icon: Icon(Icons.warning), name: 'İstenmeyen Mailler', time: ""),
+        PostCategoriItem(icon: Icon(Icons.archive), name: 'Arşiv', time: ""),
       ]),
     ));
   }
 }
 
-class ChatItem extends StatelessWidget {
+//Posta Categorileri Widgeti
+class PostCategoriItem extends StatelessWidget {
   final String name;
-  final String avatar;
+  final Icon icon;
   final String time;
-  const ChatItem({
+  final bool active;
+  const PostCategoriItem({
     Key? key,
     required this.name,
-    required this.avatar,
+    required this.icon,
     required this.time,
+    this.active = false,
   }) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
     return Container(
       decoration: BoxDecoration(
+        color: active ? Colors.grey.shade600 : Colors.grey.shade800,
         border: Border(bottom: BorderSide(color: Colors.orange.shade900)),
       ),
       padding: const EdgeInsets.symmetric(vertical: 8.0, horizontal: 15.0),
@@ -60,9 +61,7 @@ class ChatItem extends StatelessWidget {
         children: [
           Row(
             children: [
-              CircleAvatar(
-                backgroundImage: AssetImage(avatar),
-              ),
+              icon,
               SizedBox(width: 10.0),
               Text(name),
             ],

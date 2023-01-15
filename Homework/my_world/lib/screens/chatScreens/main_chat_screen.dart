@@ -2,9 +2,9 @@
 
 import 'package:flutter/material.dart';
 
-import 'categories_screen.dart';
+import 'post_categories_screen.dart';
 import 'chat_info_screen.dart';
-import 'chats_screen.dart';
+import 'chat_persons_screen.dart';
 import 'common/appbar.dart';
 import 'conversations_screen.dart';
 
@@ -43,9 +43,11 @@ class _MainChatScreenState extends State<MainChatScreen> {
         return Row(
           children: [
             Expanded(
+              flex: 5,
               child: ChatsScreen(),
             ),
             Expanded(
+              flex: 7,
               child: ConversationsScreen(),
             ),
           ],
@@ -54,12 +56,15 @@ class _MainChatScreenState extends State<MainChatScreen> {
         return Row(
           children: [
             Expanded(
+              flex: 3,
               child: CategoriesScreen(),
             ),
             Expanded(
+              flex: 4,
               child: ChatsScreen(),
             ),
             Expanded(
+              flex: 5,
               child: ConversationsScreen(),
             ),
           ],
@@ -68,15 +73,19 @@ class _MainChatScreenState extends State<MainChatScreen> {
         return Row(
           children: [
             Expanded(
+              flex: 4,
               child: CategoriesScreen(),
             ),
             Expanded(
+              flex: 5,
               child: ChatsScreen(),
             ),
             Expanded(
+              flex: 6,
               child: ConversationsScreen(),
             ),
             Expanded(
+              flex: 5,
               child: ChatInfoScreen(),
             ),
           ],
@@ -85,6 +94,7 @@ class _MainChatScreenState extends State<MainChatScreen> {
     }
 
     return Scaffold(
+      backgroundColor: Colors.transparent,
       body: Column(
         children: [
           AppHeader(),
