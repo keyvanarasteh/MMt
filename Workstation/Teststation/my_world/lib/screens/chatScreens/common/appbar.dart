@@ -37,7 +37,7 @@ class _AppHeaderState extends State<AppHeader> {
           height: 60,
           width: double.infinity,
           color: Colors.yellow,
-          child: Center(child: Text('mobile')));
+          child: const Center(child: Text('mobile')));
     } else if (deviceTtpye == 'tablet') {
       return Container(
           height: 60,
