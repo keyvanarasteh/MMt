@@ -2,8 +2,8 @@
 
 import 'package:flutter/material.dart';
 
-class CategoriesScreen extends StatelessWidget {
-  const CategoriesScreen({super.key});
+class PostCategoriesScreen extends StatelessWidget {
+  const PostCategoriesScreen({super.key});
 
   @override
   Widget build(BuildContext context) {

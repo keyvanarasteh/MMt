@@ -1,9 +1,14 @@
-// ignore_for_file: unused_label
+// ignore_for_file: unused_label, prefer_const_literals_to_create_immutables, prefer_const_constructors
 
 import 'package:flutter/material.dart';
+import 'package:test00/screens/chatScreens/conversations_screen.dart';
 
 class AppHeader extends StatefulWidget {
-  const AppHeader({super.key});
+  final Function()? onPostCategoryClicked;
+  final Function()? onChatInfoClicked;
+
+  const AppHeader(
+      {super.key, this.onPostCategoryClicked, this.onChatInfoClicked});
 
   @override
   State<AppHeader> createState() => _AppHeaderState();
@@ -34,28 +39,69 @@ class _AppHeaderState extends State<AppHeader> {
 
     if (deviceTtpye == 'mobile') {
       return Container(
-          height: 60,
-          width: double.infinity,
-          color: Colors.yellow,
-          child: const Center(child: Text('mobile')));
+        height: 60,
+        width: double.infinity,
+        // color: Colors.grey.shade700,
+        padding: EdgeInsets.symmetric(horizontal: 12.0),
+        child: Row(
+          mainAxisAlignment: MainAxisAlignment.spaceBetween,
+          children: [
+            const Icon(Icons.menu),
+            const Text("Sohbet Ekranı"),
+            const Icon(Icons.person),
+          ],
+        ),
+      );
     } else if (deviceTtpye == 'tablet') {
       return Container(
-          height: 60,
-          width: double.infinity,
-          color: Colors.deepPurple,
-          child: const Center(child: Text('tablet')));
+        height: 60,
+        width: double.infinity,
+        color: Colors.grey.shade800,
+        padding: EdgeInsets.symmetric(horizontal: 12.0),
+        child: Row(
+          mainAxisAlignment: MainAxisAlignment.spaceBetween,
+          children: [
+            InkWell(
+                onTap: widget.onPostCategoryClicked,
+                child: const Icon(Icons.category_outlined)),
+            const Text("Sohbet Ekranı"),
+            InkWell(
+                onTap: widget.onChatInfoClicked,
+                child: const Icon(Icons.info_outline)),
+          ],
+        ),
+      );
     } else if (deviceTtpye == 'desktop') {
       return Container(
-          height: 60,
-          width: double.infinity,
-          color: Colors.deepOrange,
-          child: const Center(child: Text('desktop')));
+        height: 60,
+        width: double.infinity,
+        color: Colors.grey.shade800,
+        padding: EdgeInsets.symmetric(horizontal: 12.0),
+        child: Row(
+          mainAxisAlignment: MainAxisAlignment.spaceBetween,
+          children: [
+            const Text("Sohbet Ekranı"),
+            InkWell(
+                onTap: widget.onChatInfoClicked,
+                child: const Icon(Icons.info_outline)),
+          ],
+        ),
+      );
     } else {
       return Container(
-          height: 60,
-          width: double.infinity,
-          color: Colors.pink,
-          child: const Center(child: Text('large')));
+        height: 60,
+        width: double.infinity,
+        color: Colors.grey.shade800,
+        padding: EdgeInsets.symmetric(horizontal: 12.0),
+        child: Row(
+          mainAxisAlignment: MainAxisAlignment.spaceBetween,
+          children: [
+            const Icon(Icons.menu),
+            const Text("Sohbet Ekranı"),
+            const Icon(Icons.person),
+          ],
+        ),
+      );
     }
   }
 }

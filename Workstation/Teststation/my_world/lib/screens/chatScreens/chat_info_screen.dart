@@ -9,32 +9,42 @@ class ChatInfoScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      body: ListView(
-        // ignore: prefer_const_literals_to_create_immutables
-        children: [
-          ProfileItem(
-              name: 'Muratcan SEN',
-              avatar: "assets/images/chats_screen_images/avatarMuratcan.jpg",
-              lastSeenStatus: "Çevrimiçi"),
-          InfoItem(
-            icon: Icon(Icons.email_sharp),
-            name: "E-mail:",
-            value: "sn.muratcan@hotmail.com",
-            valueColor: Colors.yellowAccent,
+      body: Container(
+        decoration: BoxDecoration(
+          border: Border(
+            left: BorderSide(color: Colors.orange.shade900),
+            right: BorderSide(color: Colors.orange.shade900),
           ),
-          InfoItem(
-            icon: Icon(Icons.phone),
-            name: "Phone:",
-            value: "+90 533 377 60 60",
-            valueColor: Colors.yellowAccent,
-          ),
-          InfoItem(
-            icon: Icon(Icons.location_city),
-            name: "Adres",
-            value: "İstanbul / Esenler",
-            valueColor: Colors.yellowAccent,
-          ),
-        ],
+        ),
+        width: double.infinity,
+        height: double.infinity,
+        child: ListView(
+          // ignore: prefer_const_literals_to_create_immutables
+          children: [
+            ProfileItem(
+                name: 'Muratcan SEN',
+                avatar: "assets/images/chats_screen_images/avatarMuratcan.jpg",
+                lastSeenStatus: "Çevrimiçi"),
+            InfoItem(
+              icon: Icon(Icons.email_sharp),
+              name: "E-mail:",
+              value: "sn.muratcan@hotmail.com",
+              valueColor: Colors.yellowAccent,
+            ),
+            InfoItem(
+              icon: Icon(Icons.phone),
+              name: "Phone:",
+              value: "+90 533 377 60 60",
+              valueColor: Colors.yellowAccent,
+            ),
+            InfoItem(
+              icon: Icon(Icons.location_city),
+              name: "Adres",
+              value: "İstanbul / Esenler",
+              valueColor: Colors.yellowAccent,
+            ),
+          ],
+        ),
       ),
     );
   }
