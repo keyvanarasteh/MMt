@@ -2,6 +2,7 @@
 
 import 'package:flutter/material.dart';
 import 'package:test00/screens/beginScreens/member_login_screen.dart';
+import 'package:test00/screens/splashScreen/view/onboarding_view.dart';
 
 void main() {
   runApp(const MyWorld());
@@ -23,7 +24,7 @@ class MyWorld extends StatelessWidget {
         //backgroundColor: Colors.grey,
         fontFamily: 'Ubuntu Font',
       ),
-      home: MemberLoginScreen(),
+      home: OnBoarding(),
     );
   }
 }
