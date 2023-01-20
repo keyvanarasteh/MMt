@@ -51,7 +51,33 @@ Bu bölümde Keyvan Arastesh hocamıza sunulacak olan ödevler bulunmaktadır.
 
 ## Screens (Ekranlar)
 
-![Ekran1]( https://drive.google.com/file/d/1SoAv_DhTOREKbiTDvNWzUz8-17VXmaSS/view?usp=sharing )
+- Screen1
+https://drive.google.com/file/d/1SoAv_DhTOREKbiTDvNWzUz8-17VXmaSS/view?usp=sharing)
+
+- Screen2
+https://drive.google.com/file/d/1jSTuPdy-lHcraYtrP1dyx_Vno1OSMf7L/view?usp=sharing
+
+- Screen4.1.0_ResponsiveMobile
+https://drive.google.com/file/d/1Tnm1D0GaxOPsIoC59Qj7P4ScRwLlgIYz/view?usp=sharing
+
+- Screen4.2.0_ResponsiveTablet
+https://drive.google.com/file/d/1-kdaByQUU8dh_BImKd_H9u3lNM8UFafU/view?usp=sharing
+
+- Screen4.2.1_ResponsiveTablet
+https://drive.google.com/file/d/1pFNOBykguqdlEF7_aAmQ1k_GUOiHNGQx/view?usp=sharing
+
+- Screen4.2.2_ResponsiveTablet
+https://drive.google.com/file/d/171109OXbfmPN34jt7qGrdnuiWqxK78b4/view?usp=sharing
+
+- Screen4.3.0_ResponsiveDesktop
+https://drive.google.com/file/d/1WdJ3zXXEI913FOBlLPICP3-wiRm5v3bQ/view?usp=sharing
+
+- Screen4.3.1_ResponsiveDesktop
+https://drive.google.com/file/d/1AFgdgNmew8_cgG_GkfHtJhUyp1rGcho-/view?usp=sharing
+
+- Screen4.4.0_ResponsiveDesktop
+https://drive.google.com/file/d/1EMvy4xh6MAX5zI07-gOVcqh8iAYXzbU0/view?usp=sharing
+
 
   
   
