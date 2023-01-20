@@ -1,7 +1,6 @@
 // ignore_for_file: prefer_const_constructors
 
 import 'package:flutter/material.dart';
-import 'package:test00/screens/beginScreens/member_login_screen.dart';
 import 'package:test00/screens/splashScreen/view/onboarding_view.dart';
 
 void main() {

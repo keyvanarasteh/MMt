@@ -1,0 +1,48 @@
+{
+    // Use IntelliSense to learn about possible attributes.
+    // Hover to view descriptions of existing attributes.
+    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "my_world",
+            "cwd": "Homework\\my_world",
+            "request": "launch",
+            "type": "dart"
+        },
+        {
+            "name": "my_world (profile mode)",
+            "cwd": "Homework\\my_world",
+            "request": "launch",
+            "type": "dart",
+            "flutterMode": "profile"
+        },
+        {
+            "name": "my_world (release mode)",
+            "cwd": "Homework\\my_world",
+            "request": "launch",
+            "type": "dart",
+            "flutterMode": "release"
+        },
+        {
+            "name": "my_world",
+            "cwd": "Workstation\\Teststation\\my_world",
+            "request": "launch",
+            "type": "dart"
+        },
+        {
+            "name": "my_world (profile mode)",
+            "cwd": "Workstation\\Teststation\\my_world",
+            "request": "launch",
+            "type": "dart",
+            "flutterMode": "profile"
+        },
+        {
+            "name": "my_world (release mode)",
+            "cwd": "Workstation\\Teststation\\my_world",
+            "request": "launch",
+            "type": "dart",
+            "flutterMode": "release"
+        }
+    ]
+}

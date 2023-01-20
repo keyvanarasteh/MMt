@@ -53,7 +53,7 @@ class OnBoardingBodyView extends StatelessWidget {
           FadeInUp(
             duration: const Duration(milliseconds: 1600),
             child: const Text(
-              'Yapımcılar:\nMuratcan ŞEN 191216007 \nMert KAYA 191216019',
+              'Yapımcı: \nİstinye Üniversitesi Bilgisayar Programcılığı MMt Grubu \n( Muratcan ŞEN 191216007 \nMert KAYA 191216019 \n Gözetmen: Keyvan Arasteh Abbasabad)',
               textAlign: TextAlign.center,
               style: TextStyle(
                 fontSize: 18,
